@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<TITLE> Alanoud alqahtani </TITLE>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  text-align: center; }
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer; }
+.web-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: white;
+  height: 500px;
+  color: white;
+  border-radius: 10px; }
+
+.topnav {
+  overflow: hidden;
+  background-color: #006666;
+  position: relative;
+  text-align: center; }
+
+.topnav #myLinks {
+  display: none; }
+
+.topnav a {
+  color: White;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block; }
+
+.topnav a.icon {
+  background: #006666;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black; }
+
+.active {
+  background-color:#006666;
+  color: white; }
+
+h2{color: #006666;}
+h3 { color: #a6a6a6; }
+button { background-color: #ddd;
+color:#006666; }
+</style></head><body>
+
+<div class="mobile-container">
+<div class="topnav">
+<img src="img_19509.jpg" alt="Smiley face" height="80" width="80">
+  <a href="#وين ناكل" class="active"> وين ناكل ؟ </a>
+  <div id="myLinks">
+    <a href="#news">  </a>
+    <a href="#contact">  </a>
+    <a href="#about">  </a>
+  </div>
+ 
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i></a> </div>
+<h2> Burger Fuel | برجر فيول  </h2>
+<h3>   برجر - 9/10  </h3> </div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";}
+     else {
+    x.style.display = "block"; } }
+
+</script> <br>
+ <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14499.389224781013!2d46.7043058!3d24.6977752!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb47fd86260d9532f!2sBurgerFuel%20Talateen%20Riyadh!5e0!3m2!1sen!2ssa!4v1576919945394!5m2!1sen!2ssa" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+ <center><a href="map.html"  class="button">اقتراح اخر  </a></center>
+<button onclick="getLocation()">Your current location</button>
+<p id="demo"></p>
+<script>
+var x = document.getElementById("demo");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser."; }}
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude; }
+</script></body></html>

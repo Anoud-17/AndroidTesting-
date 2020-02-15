@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head> 
+
+<script type="text/javascript" src="check.js"></script>
+</head>
+
+
+<body>
+
+<input type="radio" name="anoud" onclick="check();" value =" One shift" /> One shif
+<input type="radio" name="anoud" onclick="check();" value =" Two shift" /> Two shif
+
+<script>
+var a=document.getElementById("nm").value;
+function cond(){
+
+	if (a== "one shift"){
+
+		document.write("One shift");
+	}
+	else (a== "two shift"){
+		document.write("Two shift");
+	}
+}
+</script>
+<button type= "button" onclick="cond()"></button>
+</body>
+</html>
+====================
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+table, th, td {
+  border: 1px solid green;
+}
+
+input[type=submit] {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 13px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+h2: color.green;
+</style>
+</head>
+
+<body>
+<form action="/action_page.php">
+  <pre><strong>                                                          From </strong><input type="date" name="bday"> <strong> To </strong><input type="date" name="bday"> 
+</form>
+
+<h2><center> Shifts Schedule </center></h2>
+<table style="width:100%">
+  <tr>
+    <th><b><center> Num of week </center></b></th> 
+    <th>Sun</th> 
+    <th>Mon</th>
+    <th>Tue</th> 
+    <th>Wen</th> 
+    <th>Thu</th> 
+    <th>Fri</th> 
+    <th>Sat</th> 
+  </tr>
+  
+  <tr>
+  <td><center> <b> 1st week </b></center> </td>
+   <td><input type="checkbox" name="name1" />&nbsp;</td>
+   <td><input type="checkbox" name="name1" />&nbsp;</td>
+   <td><input type="checkbox" name="name1" />&nbsp;</td>
+   <td><input type="checkbox" name="name1" />&nbsp;</td>
+   <td><input type="checkbox" name="name1" />&nbsp;</td>
+   <td><input type="checkbox" name="name1" />&nbsp;</td>
+   <td><input type="checkbox" name="name1" />&nbsp;</td>
+  </tr>
+  
+  <tr>
+       <td><center> <b> 2nd week </b></center> </td>
+   <td><input type="checkbox" name="name1" />&nbsp;</td>
+   <td><input type="checkbox" name="name1" />&nbsp;</td>
+   <td><input type="checkbox" name="name1" />&nbsp;</td>
+   <td><input type="checkbox" name="name1" />&nbsp;</td>
+   <td><input type="checkbox" name="name1" />&nbsp;</td>
+   <td><input type="checkbox" name="name1" />&nbsp;</td>
+    <td><input type="checkbox" name="name1" />&nbsp;</td>
+  </tr>
+  
+  <tr>
+        <td><center> <b> 3th week </b></center> </td>
+   <td><input type="checkbox" name="name1" />&nbsp;</td>
+   <td><input type="checkbox" name="name1" />&nbsp;</td>
+   <td><input type="checkbox" name="name1" />&nbsp;</td>
+   <td><input type="checkbox" name="name1" />&nbsp;</td>
+   <td><input type="checkbox" name="name1" />&nbsp;</td>
+   <td><input type="checkbox" name="name1" />&nbsp;</td>
+    <td><input type="checkbox" name="name1" />&nbsp;</td>
+  </tr>
+  
+   <tr>
+        <td><center> <b> 4th week </b></center> </td>
+   <td><input type="checkbox" name="name1" />&nbsp;</td>
+   <td><input type="checkbox" name="name1" />&nbsp;</td>
+   <td><input type="checkbox" name="name1" />&nbsp;</td>
+   <td><input type="checkbox" name="name1" />&nbsp;</td>
+   <td><input type="checkbox" name="name1" />&nbsp;</td>
+   <td><input type="checkbox" name="name1" />&nbsp;</td>
+    <td><input type="checkbox" name="name1" />&nbsp;</td>
+  </tr>
+</table><br>
+<pre>               <input type="radio" name="gender" value="male" checked> One shift                                               <input type="radio" name="gender" value="female"> Two shift<br> <br> </pre>
+
+  <br><br>
+  <center><b> <input type="submit" value="Save"></b></center>
+ 
+</body>
+</html>

@@ -1,0 +1,17 @@
+function check()
+{
+	
+var whichShift = document.getElementsByName("anoud");
+var len = whichShift.length
+
+
+for(i=0; <len; i++)
+{
+	if(whichShift[i].checked)
+
+	{
+	alert("you have checked the"+ whichShift[i].value+
+"radio button.");
+	}
+}
+}
